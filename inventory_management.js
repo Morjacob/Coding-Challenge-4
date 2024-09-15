@@ -10,7 +10,7 @@ let inventory = [
 
 // Task 2- Create a Function to Display Product Details
 
-function displayProductDetails (name, price, quantity, lowStockLevel) {
+function displayProductDetails (_name, price, quantity, lowStockLevel) {
     const status = quantity <= lowStockLevel ? "Low Stock" : "In Stock" //using ternary operator to determine stock status
 return `Product:${inventory.name}
         price: ${price}
