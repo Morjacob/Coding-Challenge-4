@@ -15,13 +15,6 @@ function displayProductDetails (inventory) {
 : "In Stock"
 return `${inventory.name} is ${status}`}
 
-let stockStatus;
-if (quantity <= lowStockLevel) {
-    stockStatus = "Low Stock";
-}
-else {
-    stockStatus = "In Stock";
-}
 
 console.log(display(inventory[0]));
 
