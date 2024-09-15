@@ -24,7 +24,7 @@ function updateStock (unitsSold) {
     if (unitsSold <= lowStockLevel)
     return "product is in stock" }
 ;
-product.quantityInStock -= unitsSold
+inventory.quantityInStock -= unitsSold
 console.log(updateStock)
 
 
