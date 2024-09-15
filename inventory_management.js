@@ -28,11 +28,11 @@ function updateStock(inventoryItem, unitsSold) {
     } else {
         stockStatus = "In Stock";
     }
-    console.log(`Stock status for ${inventoryItem.name}: ${stockStatus}`);
-    return inventoryItem; // Return the updated inventory item
+
 }
 
-
+console.log(`Stock status for ${inventoryItem.name}: ${stockStatus}`);
+return inventoryItem; // Return the updated inventory item
 
 
 // Task 4- Create a Function to Check Low Stock Products
