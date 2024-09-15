@@ -18,7 +18,7 @@ return `Product:${inventory.name}
         Low Stock Level: ${status}`}
 
         inventory.forEach(product => 
-            console.log(displayProductDetails(product.name, product.price, product.quantity, product.lowStockLevel)));
+            console.log(displayProductDetails(inventory.name, product.price, product.quantity, product.lowStockLevel)));
 
         
 
