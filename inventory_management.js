@@ -30,5 +30,5 @@ function checkLowStock (inventory) {
     inventory.forEach(lowStockLevel => console.log(lowStockLevel));
 }
 
-console.log (lowStockLevel)
+
 
