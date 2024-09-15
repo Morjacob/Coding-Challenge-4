@@ -13,10 +13,18 @@ let inventory = [
 function displayProductDetails (inventory, price, quantity, lowStockLevel) {
     const status = quantity <= price <= lowStockLevel ? "Low Stock"
 : "In Stock" //using ternary operator to determine stock status
-return `${inventory.name} is ${status}`}
+return `Product: ${inventory.name}
+        price: ${price}
+        Quantity: ${quantity}       
+        Low Stock Level ${status}`}
 
 
 console.log(displayProductDetails(inventory[0])); //displaying data for the first item in the array
+console.log (displayProductDetails(inventory[1]));
+console.log(displayProductDetails(inventory[2]));
+console.log(displayProductDetails(inventory[3]));
+console.log(displayProductDetails(inventory[4]));
+
 
 // Task 3- Create a Function to Update Product Stock After Sales
 
