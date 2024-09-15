@@ -77,7 +77,7 @@ function processSale (productName, unitsSold) {
 
     if (product) {
         let [reducedQuantity, stockStatus] = updateStock(productName, unitsSold);
-        console.log(`Updated ${productName}: Quantity = ${reducedQuantity}, Status = ${stockStatus}`);
+        console.log(`${productName} Quantity = ${reducedQuantity}, Status = ${stockStatus}`);
         return updateStock (product, unitsSold);
     } else {
         console.log(`Error: ${productName} is not in the inventory.`); 
@@ -86,3 +86,4 @@ function processSale (productName, unitsSold) {
 }
 
 let example1 = processSale (`Laptop`, 4);
+console.log(example1)
