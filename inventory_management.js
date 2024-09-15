@@ -48,4 +48,4 @@ console.log(`Stock status for ${inventory[0].name}: ${stockStatus}`);
 
 
 
-console.log (`${inventory.name} is low in stock.`);
+console.log (`${inventory [0].name} is low in stock.`);
