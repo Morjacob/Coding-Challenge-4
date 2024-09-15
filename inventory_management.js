@@ -52,12 +52,16 @@ console.log (`${inventory [0].name} is low in stock.`);
 
 // Task 5- Create a Function to Calculate Total Inventory Value
 
-let totalInventoryValue = 0;
+
 
 function calculateInventoryValue() {
+    let totalInventoryValue = 0;
     for (let i = 0; i < inventory.length; i++ ) {
-        totalInventoryValue = inventory[i].price * inventory[i].quantity ;
+        let inventory = inventory[i]
+        totalInventoryValue += inventory[i].price * inventory[i].quantity ;
     }
+return totalValue;
 }
 
+let totalInventoryValue = calculateInventoryValue()
 console.log (`Total Inventory Value: $${totalInventoryValue}`)
