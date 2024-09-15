@@ -16,6 +16,6 @@ function displayProductDetails (inventory) {
 return `${inventory.name} is ${status}`}
 
 
-console.log(display(inventory[0]));
+console.log(displayProductDetails(inventory[0]));
 
 
