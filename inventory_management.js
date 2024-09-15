@@ -28,7 +28,7 @@ function updateStock(inventory, unitsSold) {
     } else {
         stockStatus = "In Stock";
     }
-    return inventory.quantity;
+    return inventory.quantity, stockStatus;
 }
 
 console.log(`Stock status for ${inventory.quantity}: ${stockStatus}`);
