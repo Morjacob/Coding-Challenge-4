@@ -32,7 +32,7 @@ function updateStock(inventory, unitsSold) {
 }
 
 let [updatedQuantity, stockStatus] = updateStock(inventory[0], 2); // Example: selling 2 units of the first product
-console.log(`Stock status for ${inventory[0].quantity}: ${stockStatus}`);
+console.log(`Stock status for ${inventory[0].name}: ${stockStatus}`);
 
 
 
