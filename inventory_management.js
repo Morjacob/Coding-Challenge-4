@@ -31,7 +31,7 @@ function updateStock(inventory, unitsSold) {
 
 }
 
-console.log(`Stock status for ${inventory.name}: ${stockStatus}`);
+console.log(`Stock status for ${inventory.quantity}: ${stockStatus}`);
 return inventory.quantity; // Return the updated inventory item
 
 
