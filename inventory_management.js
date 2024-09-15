@@ -73,14 +73,16 @@ console.log(`Total Inventory Value: $${totalValue}`);
 // Task 6- Create a Function to Process a Sale
 
 function processSale (productName, unitsSold) {
-    let product = inventory.find(item => item.name === productName);
+    let product = inventory.find (inventory => inventory.name === productName);
 
     if (product) {
-        let [updatedQuantity, stockStatus] = updateStock(product, unitsSold);
-        console.log(`Updated ${productName}: Quantity = ${updatedQuantity}, Status = ${stockStatus}`);
+        let [reducedQuantity, stockStatus] = updateStock(productName, unitsSold);
+        console.log(`Updated ${productName}: Quantity = ${reducedQuantity}, Status = ${stockStatus}`);
     } else {
         console.log(`Error: ${productName} is not in the inventory.`);
     }
 }
 
-console.log(processSale(`laptop`, 2));
+console.log(processSale(`Laptop`, 2));
+
+
