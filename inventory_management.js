@@ -85,4 +85,4 @@ function processSale (productName, unitsSold) {
     }
 }
 
-let example1 = processSale (`Laptop`, 4):
+let example1 = processSale (`Laptop`, 4);
