@@ -26,9 +26,11 @@ console.log(displayProductDetails(inventory[0]));
 
 // Task 4- Create a Function to Check Low Stock Products
 
-function checkLowStock (lowStockLevel) {
+let lowStockLevel = [3,2,1,5,1]; // Array of product objects with low stock
+
+function checkLowStockLevel (lowStockLevel) {
     lowStockLevel.forEach(lowStockLevel);
+    
 }
 
-lowStockLevel.forEach(lowStockLevel => console.log(lowStockLevel))
-
+   lowStockLevel.forEach(productId => console.log(productId)); 
