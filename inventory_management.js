@@ -20,12 +20,7 @@ console.log(displayProductDetails(inventory[0]));
 
 // Task 3- Create a Function to Update Product Stock After Sales
 
-function updateStock (unitsSold) {
-    if (unitsSold <= lowStockLevel)
-    return "product is in stock" }
-;
-inventory.quantityInStock -= unitsSold
-console.log(updateStock)
+
 
 
 
