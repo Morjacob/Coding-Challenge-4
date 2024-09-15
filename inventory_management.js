@@ -40,13 +40,6 @@ console.log(`Stock status for ${inventory.quantity}: ${stockStatus}`);
 
 let lowStockLevel = [3,2,1,5,1]; // Array of product objects with low stock
 
-function checkLowStockLevel (lowStockLevel) {
-    lowStockLevel.forEach(lowStockLevel);
-    
-}
-
-   lowStockLevel.forEach(productId => console.log(productId)); 
-
    function checkLowStockLevel(inventory) {
     inventory.forEach(item => {
         if (item.quantity <= item.lowStockLevel) {
