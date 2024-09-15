@@ -32,13 +32,11 @@ function updateStock(inventory, unitsSold) {
 }
 
 let [updatedQuantity, stockStatus] = updateStock(inventory[0], 2); // Example: selling 2 units of the first product
-console.log(`Stock status for ${inventory.quantity}: ${stockStatus}`);
+console.log(`Stock status for ${inventory[0].quantity}: ${stockStatus}`);
 
 
 
 // Task 4- Create a Function to Check Low Stock Products
-
-let lowStockLevel = [3,2,1,5,1]; // Array of product objects with low stock
 
    function checkLowStockLevel(inventory) {
     inventory.forEach(inventory => {
@@ -47,5 +45,7 @@ let lowStockLevel = [3,2,1,5,1]; // Array of product objects with low stock
         }
     });
 }
+
+
 
 console.log (`${inventory.name} is low in stock.`);
