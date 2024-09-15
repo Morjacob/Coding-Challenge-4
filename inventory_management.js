@@ -46,7 +46,7 @@ function checkLowStockLevel(inventory) {
             lowStockProducts.push(`${product.name} is low in stock. Current quantity: ${product.quantity}`);
         }
     });
-    return lowStockproducts;
+    return lowStockProducts;
 }
 
 // Call the function and log the results
