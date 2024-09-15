@@ -50,6 +50,8 @@ console.log(`Stock status for ${inventory[0].name}: ${stockStatus}`);
 console.log (`${inventory [0].name} is low in stock.`);
 
 
+
+
 // Task 5- Create a Function to Calculate Total Inventory Value
 
 
@@ -64,3 +66,21 @@ function calculateInventoryValue(inventory) { // Pass inventory as an argument
 // Assuming 'inventory' is a global variable
 let totalValue = calculateInventoryValue(inventory); 
 console.log(`Total Inventory Value: $${totalValue}`);
+
+
+
+
+// Task 6- Create a Function to Process a Sale
+
+function processSale (product, unitsSold) {
+    let product = inventory.find(unitsSold => unitsSold.name === product);
+
+    if (product) {
+        let [updatedQuantity, stockStatus] = updateStock(product, unitsSold);
+        console.log(`Updated ${productName}: Quantity = ${updatedQuantity}, Status = ${stockStatus}`);
+    } else {
+        console.log(`Error: ${productName} is not in the inventory.`);
+    }
+}
+
+console.log(processSale(`laptop`, 2));
