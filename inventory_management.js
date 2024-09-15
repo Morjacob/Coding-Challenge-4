@@ -75,11 +75,10 @@ console.log(`Total Inventory Value: $${totalValue}`);
 function processSale(productName, unitsSold, name) {
     const product = inventory.find(product => product.name === name);
     if (product) {
-
         return updateStock(product, unitsSold);
     } else {
         return { error: `Product ${productName} is not in the inventory.` };
     }
 }
 
-console.log (processSale(`Smartwatch1`, 7 ))
+console.log (processSale(`Tablet`, 7 )); // This is an example of the process sale function showing an error message
