@@ -85,4 +85,5 @@ function processSale(productName, unitsSold, name) {
     }
 }
 
-console.log (processSale(`Tablet`, 7 )); // This is an example of the process sale function showing an error message
+console.log (processSale(`Tablet`, 7 )); 
+// This is an example of the process sale function showing an error message when given example data
