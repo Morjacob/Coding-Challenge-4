@@ -74,15 +74,13 @@ console.log(`Total Inventory Value: $${totalValue}`);
 
 function processSale (productName, unitsSold) {
     let product = inventory.find (inventory => inventory.name === productName);
-
-    if (product) {
-        let [reducedQuantity, stockStatus] = updateStock(productName, unitsSold);
-        console.log(`Updated ${productName}: Quantity = ${reducedQuantity}, Status = ${stockStatus}`);
-    } else {
-        console.log(`Error: ${productName} is not in the inventory.`);
-    }
 }
 
-
+if (product) {
+    let [reducedQuantity, stockStatus] = updateStock(productName, unitsSold);
+    console.log(`Updated ${productName}: Quantity = ${reducedQuantity}, Status = ${stockStatus}`);
+} else {
+    console.log(`Error: ${productName} is not in the inventory.`);
+}
 
 
