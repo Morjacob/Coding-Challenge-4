@@ -39,14 +39,14 @@ console.log(`Stock status for ${inventory[0].name}: ${stockStatus}`);
 // Task 4- Create a Function to Check Low Stock Products
 
 function checkLowStockLevel(inventory) {
-    
-    inventory.forEach(item => {
-        if (item.quantity <= item.lowStockLevel) {
-            lowStockItems.push(`${item.name} is low in stock. Current quantity: ${item.quantity}`);
+    let lowStockProducts = []; 
+
+    inventory.forEach(product => {
+        if (product.quantity <= product.lowStockLevel) {
+            lowStockProducts.push(`${product.name} is low in stock. Current quantity: ${product.quantity}`);
         }
     });
-
-    return lowStockItems;
+    return lowStockproducts;
 }
 
 // Call the function and log the results
