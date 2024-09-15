@@ -48,4 +48,4 @@ let lowStockLevel = [3,2,1,5,1]; // Array of product objects with low stock
     });
 }
 
-console.log (checkLowStockLevel(inventory));
+checkLowStockLevel(inventory);
