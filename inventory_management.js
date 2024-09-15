@@ -72,7 +72,7 @@ console.log(`Total Inventory Value: $${totalValue}`);
 
 // Task 6- Create a Function to Process a Sale
 
-function processSale(product, unitsSold, name) {
+function processSale(productName, unitsSold, name) {
     const product = product.find(product => product.name === name);
     if (product) {
 
