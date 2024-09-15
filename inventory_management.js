@@ -54,4 +54,4 @@ function checkLowStockLevel (lowStockLevel) {
     });
 }
 
-checkLowStockLevel(inventory);
+console.log (checkLowStockLevel(inventory));
