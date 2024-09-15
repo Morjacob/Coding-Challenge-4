@@ -28,9 +28,10 @@ function updateStock(inventory, unitsSold) {
     } else {
         stockStatus = "In Stock";
     }
-    return inventory.quantity, stockStatus;
+    return [inventory.quantity, stockStatus];
 }
 
+let [updatedQuantity, stockStatus] = updateStock(inventory[0], 2); // Example: selling 2 units of the first product
 console.log(`Stock status for ${inventory.quantity}: ${stockStatus}`);
 
 
