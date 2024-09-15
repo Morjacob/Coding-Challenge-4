@@ -20,18 +20,17 @@ console.log(displayProductDetails(inventory[0]));
 
 // Task 3- Create a Function to Update Product Stock After Sales
 
-let unitsSold = quantity - lowStockLevel
-
-function updateStock (quantity, unitsSold) {
-return quantity -= unitsSold
+function updateStock(inventoryItem, unitsSold) {
+    inventoryItem.quantity -= unitsSold;
+    let stockStatus;
+    if (inventoryItem.quantity <= inventoryItem.lowStockLevel) {
+        stockStatus = 'Low Stock';
+    } else {
+        stockStatus = "In Stock";
+    }
+    console.log(`Stock status for ${inventoryItem.name}: ${stockStatus}`);
+    return inventoryItem; // Return the updated inventory item
 }
-
-if (quantity <= lowStockLevel) {
-    stockStatus = 'Low Stock';
- } else stockStatus = "In Stock"; {
-
- }
-console.log (`stock status ${stockStatus}`)
 
 
 
@@ -46,3 +45,13 @@ function checkLowStockLevel (lowStockLevel) {
 }
 
    lowStockLevel.forEach(productId => console.log(productId)); 
+
+   function checkLowStockLevel(inventory) {
+    inventory.forEach(item => {
+        if (item.quantity <= item.lowStockLevel) {
+            console.log(`${item.name} is low in stock.`);
+        }
+    });
+}
+
+checkLowStockLevel(inventory);
