@@ -83,6 +83,6 @@ function processSale (productName, unitsSold) {
     }
 }
 
-console.log(processSale(`Laptop`, 2));
+
 
 
