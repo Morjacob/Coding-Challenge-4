@@ -84,3 +84,5 @@ function processSale (productName, unitsSold) {
         return {error: `product ${productName} is not in the inventory`}
     }
 }
+
+let example1 = processSale (`Laptop`, 4):
