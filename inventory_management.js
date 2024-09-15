@@ -10,8 +10,8 @@ let inventory = [
 
 // Task 2- Create a Function to Display Product Details
 
-function displayProductDetails (inventory) {
-    const status = quantity <= lowStockLevel ? "Low Stock"
+function displayProductDetails (inventory, quantity) {
+    const status = quantity.name <= lowStockLevel ? "Low Stock"
 : "In Stock"
 return `${inventory.name} is ${status}`}
 
