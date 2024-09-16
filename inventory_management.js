@@ -37,7 +37,7 @@ function updateStock(inventory, unitsSold) {
 }
 
 let [updatedQuantity, stockStatus] = updateStock(inventory[0], 3); // An example of selling 2 units of first item in array
-
+console.log (updateStock(inventory[0], 3))
 
 
 
