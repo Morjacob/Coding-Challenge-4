@@ -37,8 +37,8 @@ function updateStock(inventory, unitsSold) {
 }
 
 let [updatedQuantity, stockStatus] = updateStock(inventory[0], 3); // An example of selling 2 units of first item in array
-console.log (`updatedQuantity: ${updatedQuantity}
-              stock status: ${stockStatus}`);
+console.log (`Updated Quantity for ${inventory[0].name}: ${updatedQuantity}
+    stock status: ${stockStatus}`);
 
 
 // Task 4- Create a Function to Check Low Stock Products
