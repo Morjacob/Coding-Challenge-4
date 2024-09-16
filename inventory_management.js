@@ -37,7 +37,7 @@ function updateStock(inventory, unitsSold) {
 }
 
 let [updatedQuantity, stockStatus] = updateStock(inventory[0], 2); // An example of selling 2 units of first item in array
-
+console.log (updateStock)
 
 
 
@@ -56,7 +56,7 @@ function checkLowStockLevel(inventory) {
 
 
 const lowStockResults = checkLowStockLevel(inventory);
-lowStockResults.forEach(result => console.log(result)); //will show products with low stock
+lowStockResults.forEach(result => console.log(result)); //will show products with low stock, for example my earbuds
 
 
 
