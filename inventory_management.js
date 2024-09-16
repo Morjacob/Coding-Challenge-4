@@ -45,7 +45,8 @@ console.log (`Updated Quantity for ${inventory[0].name}: ${updatedQuantity}
 // Task 4- Create a Function to Check Low Stock Products
 
 function checkLowStockLevel(inventory) {
-    let lowStockProducts = []; //when the inventory is updated with a low stock product, this array should populate with data
+//when the inventory is updated with a low stock product, this array should populate with data, my html shows earbuds low in stock
+    let lowStockProducts = []; 
 
     inventory.forEach(product => {
         if (product.quantity <= product.lowStockLevel) {
