@@ -36,11 +36,8 @@ function updateStock(inventory, unitsSold) {
     return [inventory.quantity, stockStatus];
 }
 
-inventory.forEach(inventory => {
-    let [updatedQuantity, stockStatus] = updateStock(inventory, /* unitsSold */); // Call updateStock and get the returned values
-    console.log(`Updated quantity for ${inventory.name}: ${updatedQuantity}`); 
-    console.log(`Stock status: ${stockStatus}`);
-});
+let [updatedQuantity, stockStatus] = updateStock(inventory[0], 3); // An example of selling 2 units of first item in array
+
 
 
 
