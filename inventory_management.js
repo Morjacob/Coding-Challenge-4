@@ -5,7 +5,8 @@ let inventory = [
     { name: 'Smartphone', price: 800, quantity: 5, lowStockLevel: 2 },
     { name: 'Tablet', price: 400, quantity: 7, lowStockLevel: 1 },
     { name: 'Headphones', price: 100, quantity: 15, lowStockLevel: 5 },
-    { name: 'Smartwatch', price: 250, quantity: 3, lowStockLevel: 1 }
+    { name: 'Smartwatch', price: 250, quantity: 3, lowStockLevel: 1 },
+    { name: `Earbuds`, price: 200, quantity: 5, lowStockLevel: 6 }
 ]
 
 // Task 2- Create a Function to Display Product Details
@@ -41,7 +42,7 @@ console.log(`Stock status for ${inventory[1].name}: ${stockStatus}`);
 console.log(`Stock status for ${inventory[2].name}: ${stockStatus}`);
 console.log(`Stock status for ${inventory[3].name}: ${stockStatus}`);
 console.log(`Stock status for ${inventory[4].name}: ${stockStatus}`);
-
+console.log(`Stock status for ${inventory[5].name}: ${stockStatus}`);
 
 
 
