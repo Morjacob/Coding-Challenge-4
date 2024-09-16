@@ -12,13 +12,13 @@ let inventory = [
 
 function displayProductDetails (_name, price, quantity, lowStockLevel) {
     const status = quantity <= lowStockLevel ? "Low Stock" : "In Stock" //using ternary operator to determine stock status
-return `Product:${product.name}
+return `Product:${_name}
         price: ${price}
         Quantity: ${quantity}       
         Low Stock Level: ${status}`}
 
         inventory.forEach(product => 
-            console.log(displayProductDetails(product.name, product.price, product.quantity, product.lowStockLevel)));
+            console.log(displayProductDetails(_name, product.price, product.quantity, product.lowStockLevel)));
 
         
 
